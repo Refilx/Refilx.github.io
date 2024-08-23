@@ -1,0 +1,274 @@
+/*
+@font-face {
+    font-family: "fonte titulo";
+    src: url('../assets/fonts/Micro5-Regular.ttf');
+}
+
+body{
+    width: 1600px;
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    font-family: "fonte titulo";
+    font-size: 25px;
+}
+
+main{
+    height: 100dvh; 
+}
+
+.rowElement{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.infoIcons{
+    height: 40px;
+    width: 40px;
+    vertical-align: middle;
+}
+
+*/
+/*
+@font-face {
+    font-family: "fonte titulo";
+    src: url('../assets/fonts/Micro5-Regular.ttf');
+}
+
+body {
+    width: 100%; /* Definir largura para ocupar toda a largura disponível 
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    color: black;
+    font-family: "fonte titulo";
+    font-size: 2vw; /* Usar unidade relativa para o tamanho de fonte 
+}
+
+main {
+    min-height: 100vh; /* Usar min-height para garantir altura mínima 
+    padding: 20px; /* Adicionar padding para espaço interno 
+}
+
+#education {
+    margin-top: 35vh; /* Margem superior usando altura da viewport 
+    background: linear-gradient(to top, orangered, white); /* Gradiente de cor laranja 
+}
+
+#experience{
+    background: linear-gradient(to bottom, orangered, white); /* Gradiente de cor laranja 
+
+}
+
+.gridElement {
+    display: grid;
+    grid-template-columns: 40dvh 40dvh;
+    grid-template-rows: 15dvh 15dvh;
+    align-content: space-around;  /*Cria um espaço entre os elementos
+    align-items: center;    
+}
+
+.rowElement {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; /* Alterado para space-around para melhor distribuição 
+    align-items: center;
+    margin-bottom: 20px; /* Espaçamento inferior entre as linhas 
+}
+
+.infoIcons {
+    height: 3vw; /* Usar unidade relativa para tamanho de ícone 
+    width: 3vw; /* Usar unidade relativa para tamanho de ícone 
+    margin: 1vw;
+    vertical-align: middle;
+    text-align: center;
+}
+
+/* Media Queries para ajustar o layout em diferentes tamanhos de tela
+@media (max-width: 1200px) {
+    body {
+        font-size: 2vw; /* Ajuste o tamanho da fonte para telas menores 
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 3vw; /* Ajuste o tamanho da fonte para dispositivos móveis 
+    }
+
+    .rowElement {
+        flex-direction: column; /* Altere para coluna em telas menores 
+        text-align: center; /* Centralize o texto em telas menores 
+    }
+
+    .infoIcons li{
+        height: 6vw; /* Ajuste o tamanho do ícone para dispositivos móveis 
+        width: 6vw; /* Ajuste o tamanho do ícone para dispositivos móveis 
+        margin-bottom: 10px; /* Reduza o espaçamento inferior entre os ícones 
+        list-style: none;
+    }
+}
+*/
+
+@font-face {
+    font-family: "fonte titulo";
+    src: url('../assets/fonts/Micro5-Regular.ttf');
+}
+
+.corpoText {
+    /* margin-top: 20dvh; */
+    /* margin-bottom: 5dvh; */
+   font-size: 1em;
+   text-align: justify;
+   justify-content: center;
+   align-items: center;
+}
+
+.about-image {
+   margin-top: 20dvh;
+   width: 20dvw;
+   height: 20dvw;
+   /* max-width: 400px; Define um tamanho máximo para a imagem */
+  /* max-height: 400px;  Define um tamanho máximo para a imagem */
+   border-radius: 50%;
+   margin-left: 15dvw; 
+}
+
+body {
+    width: 99dvw; /* Definir largura para ocupar toda a largura disponível */
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Alinhar conteúdo ao centro vertical e horizontalmente */
+    text-align: center;
+    background-color: white;
+    color: black;
+    font-family: "fonte titulo";
+    font-size: 2vw; /* Usar unidade relativa para o tamanho de fonte */
+}
+
+/*
+main {
+    min-height: 100vh; /* Usar min-height para garantir altura mínima 
+    padding: 20px; /* Adicionar padding para espaço interno 
+}
+*/
+
+h1, h3, span{
+    text-align: center;
+    justify-content: center;
+
+}
+
+#education, #experience{
+    display: flex;
+    width: auto;
+}
+
+#education {
+     /* margin-top: 35vh; /* Margem superior usando altura da viewport */
+    background: linear-gradient(to top, orangered, white); /* Gradiente de cor laranja */
+}
+
+#experience {
+    background: linear-gradient(to bottom, orangered, white); /* Gradiente de cor laranja */
+}
+
+.sectionTitle{
+    text-align: center;
+    size: 3dvw;
+}
+
+/*
+.gridElement {
+    display: grid;
+    grid-template-columns: 80dvh;
+    /* grid-template-columns: repeat(2, 40vw);  /* Ajuste para 2 colunas de 40% da largura da viewport */
+    /* grid-template-rows: repeat(2, 15vh); /* Ajuste para 2 linhas de 15% da altura da viewport */
+     /* gap: 5dvw; /* Espaço entre as células do grid 
+    align-content: center; /* Alinhar o conteúdo verticalmente no centro do grid 
+    justify-items: center; /* Alinhar os itens das células horizontalmente no centro */
+     /*margin-bottom: 5dvh;*/
+     /*margin-left: 7dvw;
+}
+*/
+
+div{
+    align-content: center;
+    justify-content: center;
+    text-align: justify;
+}
+
+.centralize-text {
+    width: 50%;
+}
+
+.centralize-icons{
+}
+
+section {
+    width: 50%;
+    padding: 20px; /* Adicionar padding para espaço interno */
+    min-height: 50vh; /* Usar min-height para garantir altura mínima */
+    text-align: justify;
+    padding-left: 8vw;
+    justify-content: center;
+}   
+
+.rowElement {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px; /* Espaçamento inferior entre as linhas */
+}
+
+.infoIcons {
+    height: 4vw; /* Usar unidade relativa para tamanho de ícone */
+   /* width: 4vw; Usar unidade relativa para tamanho de ícone */
+     padding-right: 2dvw; 
+    justify-content: space-between; /* Alterado para space-around para melhor distribuição */
+    align-content: center;
+}
+
+ul{
+    
+}
+
+/* Media Queries para ajustar o layout em diferentes tamanhos de tela */
+@media (max-width: 768px) {
+    header {
+        
+    }
+
+    body {
+        font-size: 5vw; /* Ajuste o tamanho da fonte para dispositivos móveis */
+        width: 100;
+    }
+
+    /*
+    .gridElement {
+        grid-template-columns: 80dvw; /* Ajuste para 1 coluna ocupando 80% da largura da viewport 
+    }
+    */
+
+ 
+
+    .infoIcons {
+        height: 6vw; /* Ajuste o tamanho do ícone para dispositivos móveis */
+        /* width: 6vw; Ajuste o tamanho do ícone para dispositivos móveis */
+        margin-bottom: 10px; /* Reduza o espaçamento inferior entre os ícones */
+        justify-content: center;
+        align-items: start;
+        padding-left: 0dvw;
+    }
+}
