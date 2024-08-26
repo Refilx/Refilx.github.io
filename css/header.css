@@ -1,83 +1,9 @@
-/*
-header{
-    width: 90%;
-    height: 60px;
-    background-color: tomato;
-    padding: 10px;
-    margin: 10px 20px;
-    border-radius: 30px;
-}
-
-.logoHeader{
-    width: 60px;
-    height: 60px;
-    border-radius: 30px;
-}
-
-.link{
-    text-decoration: none;
-    font-family: "fonte titulo";
-    font-size: 35px;
-    color: black;
-}
-
-.link:hover{
-    color: rgb(60 180 186);
-}
-
-.selectedLinkMenu{
-    color: #43C59E;
-}
-
-.listNavMenu li{
-    margin: 20px;
-    list-style: none;
-}
-
-header button{
-    color:white;
-  font-family: "fonte titulo";
-  font-size:30px;
-  text-align: center;
-  text-decoration:none;
-  background-color:#FFA12B;
-  display:block;
-  position:relative;
-  padding:5px 5px;
-  margin-bottom: 20px;
-  
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  text-shadow: 0px 1px 0px #000;
-  filter: dropshadow(color=#000, offx=0px, offy=1px);
-  
-  -webkit-box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
-  -moz-box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
-  box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
-  
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-}
-
-header button:active{
-    top:10px;
-    background-color:#F78900;
-    
-    -webkit-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100;
-    -moz-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3pxpx 0 #915100;
-    box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100;
-}
-    */
-
 @font-face {
     font-family: "fonte titulo";
-    /* Adicione aqui a definição da fonte, se necessário */
 }
 
-/* Estilo básico do header */
 header {
     width: 90dvw;
-     /*max-width: 1200px; Definir largura máxima para evitar que o cabeçalho fique muito largo */
     height: 10vh;
     background-color: tomato;
     padding: 10px;
@@ -90,27 +16,22 @@ header {
 
 /* Estilo do logo */
 .logoHeader {
-    width: 4dvw;
-    height: 4dvw;
+    width: 5vw;
+    height: 5vw;
     border-radius: 50%;
 }
 
 /* Estilo dos links no menu */
 .link {
     text-decoration: none;
-    font-family: "fonte titulo"; /* Ajuste a fonte conforme necessário */
-    font-size: 2vw; /* Usar unidade relativa para o tamanho da fonte */
+    font-family: "fonte titulo"; 
+    font-size: 2vw; /* Usando unidade relativa para o tamanho da fonte */
     color: black;
     transition: color 0.3s ease; /* Transição suave de cor ao passar o mouse */
 }
 
 .link:hover {
-    color: #3cb4ba; /* Nova cor ao passar o mouse */
-}
-
-/* Estilo do link selecionado no menu */
-.selectedLinkMenu {
-    color: #43C59E;
+    color: cyan; /* Nova cor ao passar o mouse */
 }
 
 /* Estilo da lista de navegação */
@@ -125,6 +46,12 @@ header {
     margin: 0 10px; /* Espaçamento entre os itens do menu */
 }
 
+/*Ajustando a comportamento da classe especificamente no elemento header*/
+header.rowElement {
+    justify-content: space-around;
+}
+
+/* Configuração e estilização do botão início*/
 header button{
     color:white;
   font-family: "fonte titulo";
@@ -158,22 +85,39 @@ header button:active{
     -moz-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3pxpx 0 #915100;
     box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100;
 }
+/* Configuração e estilização do botão Fim*/
 
 /* Media Queries para ajustar o layout em diferentes tamanhos de tela */
 @media (max-width: 768px) {
     header {
-        flex-direction: column; /* Mudar para coluna em telas menores */
+        flex-direction: column; /* Muda os links da header deixando-os em uma coluna em telas menores */
         height: auto; /* Altura automática para ajuste de conteúdo */
-        text-align: center; /* Centralizar texto */
+        text-align: center; /* Centraliza o texto */
+    }
+    
+    /*Ajustando o tamanho da logo para dispositivos menores*/
+    .logoHeader{
+        height: 20vw;
+        width: 20vw;
     }
 
     .link, .selectedLinkMenu {
-        font-size: 4vw; /* Reduzir tamanho da fonte dos links para dispositivos móveis */
-        
+        font-size: 4vw; /* Reduz o tamanho da fonte dos links para dispositivos móveis */
     }
 
+    /*Ajustando a lista no menu da navbar*/
+    .listNavMenu {
+        flex-direction: column;
+        margin: 10px 0; /* Ajusta a margem */
+    }
+
+    .listNavMenu li {
+        margin: 10px 0; /* Espaçamento entre os itens do menu */
+    }
+
+    /*Ajustando obotão para dispositivos móveis*/
     header button {
-        font-size: 3vw; /* Reduzir tamanho da fonte do botão para dispositivos móveis */
-        padding: 8px 16px; /* Reduzir padding do botão para dispositivos móveis */
+        font-size: 3vw; 
+        padding: 8px 16px; 
     }
 }
