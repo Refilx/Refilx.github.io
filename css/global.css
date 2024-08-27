@@ -1,6 +1,7 @@
+/*Estabelecendo a fonte que será usada no texto do portfólio*/
 @font-face {
     font-family: "fonte titulo";
-    src: url('../assets/fonts/Micro5-Regular.ttf');
+    src: url('../assets/fonts/Oswald-VariableFont_wght.ttf');
 }
 
 /*Espaço de declaração de variáveis*/
@@ -9,7 +10,6 @@
     --cor-final-do-gradiente: white;
     --cor-de-fundo-geral: black;
     --nome-da-fonte: "fonte titulo";
-
 }
 
 /*Ajustando as configurações do corpo do texto*/
@@ -149,7 +149,7 @@ ul{
 
     /*Ajustando as configurações dos ícones na página*/
     .infoIcons {
-        height: 6vw; /* Ajustando o tamanho do ícone para dispositivos móveis */
+        height: 10vw; /* Ajustando o tamanho do ícone para dispositivos móveis */
         margin-bottom: 10px; /* Reduzindo o espaçamento inferior entre os ícones */
         justify-content: center;
         align-items: start;
